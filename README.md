@@ -7,7 +7,7 @@ A full stack python framework for the web, is what i used for this site.
 
 ## Focus
 My focus on bid-u was getting user details from form and majorly
-### Adding checkout option or say integrate a payment gateway
+##### Adding checkout option or say integrate a payment gateway
 
 ## Payment Gateway used
 PAYSTACK
