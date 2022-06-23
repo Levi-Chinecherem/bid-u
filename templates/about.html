@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block content %}
+
+
+	<div class="page-heading text-center">
+
+		<div class="container zoomIn animated">
+			
+			<h1 class="page-title">ABOUT US <span class="title-under"></span></h1>
+			<p class="page-description">
+				The pain of loneliness by itself is a lot of pain, it needs to be eradicated.
+			</p>
+			
+		</div>
+
+	</div>
+
+	<div class="main-container">
+
+		<div class="container">
+
+			<div class="row fadeIn animated">
+
+				<div class="col-md-6">
+					<img src="{% static 'images/about-us.jpg' %}" alt="" class="img-responsive">
+				</div>
+
+				<div class="col-md-6">
+					<h2 class="title-style-2">ABOUT Bid-U <span class="title-under"></span></h2>
+					<p>
+						Bid-U a non profit organisation set out to give voice to the voiceless,
+						taking into consideration the fact that number of kids who needs help and
+						attention is growing by the day.<br>
+
+						We run a charity, taking in the needy, providing for them and making sure
+						they enjoy human live as every other average person does, academically,
+						socially and otherwise.
+					</p>
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptatem, ea, quisquam vero
+						ullam nesciunt recusandae expedita similique nisi! Ducimus, reiciendis, quia. Explicabo minima
+						error excepturi minus, aperiam illum fugit , quia. Explicabo minima error excepturi minus,
+						aperiam illum fugit.
+					</p>
+					
+				</div>
+
+			</div> <!-- /.row -->
+			<br>
+			{% include 'section-home.html' %}
+		</div> <!-- /.about-us -->
+
+
+	    <div class="our-team animate-onscroll fadeIn">
+	        <div class="container">
+	            <h2 class="title-style-1">Our Team <span class="title-under"></span></h2>
+	            <div class="row">
+
+	                <div class="col-md-3 col-sm-6">
+	                    <div class="team-member">
+	                        <div class="thumnail">
+	                            <img src="{% static 'images/team/member-1.jpg' %}" alt="" class="cause-img">
+	                        </div>
+	                        <h4 class="member-name"><a href="#">Robert C. Numbers</a></h4>
+	                        <div class="member-position">
+	                            CO-FOUNDER
+	                        </div>
+							{% include 'contact_links.html' %}
+	                    </div> <!-- /.team-member -->
+	                </div>
+
+	                <div class="col-md-3 col-sm-6">
+	                    <div class="team-member">
+	                        <div class="thumnail">
+	                            <img src="{% static 'images/team/member-3.jpg' %}" alt="" class="cause-img">
+	                        </div>
+	                        <h4 class="member-name"><a href="#">Marjorie R. Echevarria</a></h4>
+	                        <div class="member-position">
+	                            CO-FOUNDER
+	                        </div>
+	                        <div class="btn-holder">
+								{% include 'contact_links.html' %}
+	                        </div>
+	                    </div> <!-- /.team-member -->
+	                </div>
+
+
+	                <div class="col-md-3 col-sm-6">
+	                    <div class="team-member">
+	                        <div class="thumnail">
+	                            <img src="{% static 'images/team/member-4.jpg' %}" alt="" class="cause-img">
+	                        </div>
+	                        <h4 class="member-name"><a href="#">Allison J. Falls</a></h4>
+	                        <div class="member-position">
+	                            CO-FOUNDER
+	                        </div>
+	                        <div class="btn-holder">
+								{% include 'contact_links.html' %}
+	                        </div>
+	                    </div> <!-- /.team-member -->
+	                </div>
+
+
+	                <div class="col-md-3 col-sm-6">
+	                    <div class="team-member">
+	                        <div class="thumnail">
+	                            <img src="{% static 'images/team/member-2.jpg' %}" alt="" class="cause-img">
+	                        </div>
+	                        <h4 class="member-name"><a href="#">Bryan B. Stevens</a></h4>
+	                        <div class="member-position">
+	                            CO-FOUNDER
+	                        </div>
+	                        <div class="btn-holder">
+								{% include 'contact_links.html' %}
+	                        </div>
+	                    </div> <!-- /.team-member -->
+	                </div>
+	            </div> <!-- /.row -->
+
+	        </div>
+	    </div>
+
+	</div>
+
+
+{% endblock content %}

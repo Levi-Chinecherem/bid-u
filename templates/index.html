@@ -1,0 +1,211 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block content %}
+
+  <!-- Carousel
+  ================================================== -->
+  <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#homeCarousel" data-slide-to="1"></li>
+          <li data-target="#homeCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+
+            <img src="{% static 'images/slider/home-slider-1.jpg' %}" alt="">
+
+            <div class="container">
+
+              <div class="carousel-caption">
+
+                <h2 class="carousel-title bounceInDown animated slow">Because they need your help</h2>
+                <h4 class="carousel-subtitle bounceInUp animated slow ">Do not let them down</h4>
+                <a href="{% url 'donate' %}" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow">DONATE NOW</a>
+
+              </div> <!-- /.carousel-caption -->
+
+            </div>
+
+          </div> <!-- /.item -->
+
+
+          <div class="item ">
+
+            <img src="{% static 'images/slider/home-slider-2.jpg' %}" alt="">
+
+            <div class="container">
+
+              <div class="carousel-caption">
+
+                <h2 class="carousel-title bounceInDown animated slow">Together we can improve their lives</h2>
+                <h4 class="carousel-subtitle bounceInUp animated slow"> So let's do it !</h4>
+                <a href="{% url 'donate' %}" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated">DONATE NOW</a>
+
+              </div> <!-- /.carousel-caption -->
+
+            </div>
+
+          </div> <!-- /.item -->
+
+
+
+
+          <div class="item ">
+
+            <img src="{% static 'images/slider/home-slider-3.jpg' %}" alt="">
+
+            <div class="container">
+
+              <div class="carousel-caption">
+
+                <h2 class="carousel-title bounceInDown animated slow" >A penny is a lot of money, if you have not got a penny.</h2>
+                <h4 class="carousel-subtitle bounceInUp animated slow">You can make the diffrence !</h4>
+                <a href="{% url 'donate' %}" class="btn btn-lg btn-secondary hidden-xs bounceInUp animated slow">DONATE NOW</a>
+
+              </div> <!-- /.carousel-caption -->
+
+            </div>
+
+          </div> <!-- /.item -->
+
+        </div>
+
+        <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+          <span class="fa fa-angle-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+          <span class="fa fa-angle-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+  </div><!-- /.carousel -->
+
+  <div class="section-home about-us fadeIn animated">
+
+      {% include 'section-home.html' %}
+    
+  </div> <!-- /.about-us -->
+
+  <div class="section-home home-reasons">
+
+      <div class="container">
+
+          <div class="row">
+              
+              <div class="col-md-6">
+
+                  <div class="reasons-col animate-onscroll fadeIn">
+
+                      <img src="{% static 'images/reasons/we-fight-togother.jpg' %}" alt="">
+
+                      <div class="reasons-titles">
+
+                          <h3 class="reasons-title">We fight together</h3>
+                          <h5 class="reason-subtitle">We are humans</h5>
+                          
+                      </div>
+
+                      <div class="on-hover hidden-xs">
+                          
+                              <p>The most beautiful people i know are those who have known defeat,
+                              known suffering, known struggle, known loss, have found their way out of
+                              the depths. These people have an appreciation, a sensitivity, and understanding of life
+                              that fills them with compassion and deep loving concern</p>
+                              
+                      </div>
+                  </div>
+                  
+              </div>
+
+
+              <div class="col-md-6">
+
+                  <div class="reasons-col animate-onscroll fadeIn">
+
+                      <img src="{% static 'images/reasons/we-care-about.jpg' %}" alt="">
+
+                      <div class="reasons-titles">
+
+                          <h3 class="reasons-title">WE care about others</h3>
+                          <h5 class="reason-subtitle">We are humans</h5>
+                          
+                      </div>
+
+                      <div class="on-hover hidden-xs">
+                          
+                              <p>Dreaming is our souls voice from within.<br>
+                                Connecting our brain and hearts true feelings.<br>
+                                Dreams are the voice, that needs to be heard.<br>
+                                Not like just any, but a black n white picture.<br>
+                                The details may seem blurry to ones eye.<br>
+                                But another sees color, in a different light.<br>
+                                The picture is printed out there before you.<br>
+                                It's your decision, come together.<br>
+                                  Let's help this kids fulfill their dreams
+                              </p>
+                              
+                      </div>
+
+
+                  </div>
+                  
+              </div>
+
+
+          </div>
+        
+
+
+      </div>
+    
+
+  </div> <!-- /.home-reasons -->
+
+  <div class="section-home our-causes animate-onscroll fadeIn">
+
+      <div class="container">
+
+          <h2 class="title-style-1">Our Causes <span class="title-under"></span></h2>
+
+          {% include 'cause-contents.html' %}
+
+      </div>
+      
+  </div> <!-- /.our-causes -->
+
+  <div class="section-home our-sponsors animate-onscroll fadeIn">
+
+      <div class="container">
+
+          <h2 class="title-style-1">Our Sponsors <span class="title-under"></span></h2>
+
+          <ul class="owl-carousel list-unstyled list-sponsors">
+
+            <li> <img src="{% static 'images/sponsors/bus.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/wikimedia.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/one-world.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/wikiversity.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/united-nations.png' %}" alt=""></li>
+
+            <li> <img src="{% static 'images/sponsors/bus.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/wikimedia.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/one-world.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/wikiversity.png' %}" alt=""></li>
+            <li> <img src="{% static 'images/sponsors/united-nations.png' %}" alt=""></li>
+
+          </ul>
+
+      </div>
+
+  </div> <!-- /.our-sponsors -->
+
+
+{% endblock content %}

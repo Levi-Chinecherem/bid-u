@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+  {% block content %}
+
+
+	<div class="page-heading text-center">
+		<div class="container zoomIn animated">
+			<h1 class="page-title">OUR CAUSES <span class="title-under"></span></h1>
+			<p class="page-description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit Necessitatibus.
+			</p>
+		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="our-causes fadeIn animated">
+	        <div class="container">
+	            <h2 class="title-style-1">Our Causes <span class="title-under"></span></h2>
+
+	            {% include 'cause-contents.html' %}
+
+				{% include 'cause-contents.html' %}
+
+	         </div>
+	    </div> <!-- /.our-causes -->
+
+		
+
+
+	</div> <!-- /.main-container  -->
+
+
+{% endblock content %}
